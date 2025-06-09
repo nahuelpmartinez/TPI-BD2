@@ -1,6 +1,6 @@
-CREATE DATABASE GestionStockDB;
+CREATE DATABASE CafeteriaStockDB;
 GO
-USE GestionStockDB;
+USE CafeteriaStockDB;
 GO
 CREATE TABLE Categoria (
     IdCategoria INT PRIMARY KEY IDENTITY(1,1),
