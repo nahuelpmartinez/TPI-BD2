@@ -80,6 +80,7 @@
             this.btnEliminarFisico.TabIndex = 14;
             this.btnEliminarFisico.Text = "Eliminar de BD";
             this.btnEliminarFisico.UseVisualStyleBackColor = true;
+            this.btnEliminarFisico.Click += new System.EventHandler(this.btnEliminarFisico_Click);
             // 
             // btnAgregar
             // 

@@ -109,5 +109,32 @@ namespace Grupo_7A
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void btnEliminarFisico_Click(object sender, EventArgs e)
+        {
+            SucursalNegocio negocio = new SucursalNegocio();
+            Sucursal seleccionado;
+            try
+            {
+                if (dgvSucursales.CurrentRow != null)
+                {
+                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        seleccionado = (Sucursal)dgvSucursales.CurrentRow.DataBoundItem;
+                        negocio.eliminar(seleccionado.Id);
+                        cargar();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No existe artículo para eliminar.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
