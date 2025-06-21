@@ -20,7 +20,9 @@ namespace negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CafeteriaStockDB; integrated security=true");
+            //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=GestionStockDB; integrated security=true");
+            conexion = new SqlConnection("server=192.168.100.66; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
+
             comando = new SqlCommand();
         }
 

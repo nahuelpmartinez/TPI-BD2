@@ -29,14 +29,6 @@ namespace Grupo_7A
                 listaArticulos = negocio.listar();
                 dgvArticulos.DataSource = listaArticulos;
                 ocultarColumnas();
-                //if (listaArticulos != null && listaArticulos.Count > 0)
-                //{
-                //    cargarImagen(listaArticulos[0].Imagen);
-                //}
-                //else
-                //{
-                //    cargarImagen(null);
-                //}
             }
             catch (Exception ex)
             {
@@ -121,26 +113,14 @@ namespace Grupo_7A
         private void ocultarColumnas()
         {
             dgvArticulos.Columns["Id"].Visible = false;
+            dgvArticulos.Columns["Estado"].Visible = false;
         }
-        //private void cargarImagen(string imagen)
-        //{
-        //    try
-        //    {
-        //        pbxArticulos.Load(imagen);
-        //    }
-        //    catch (Exception)
-        //    {
-        //        //pbxArticulos.Load("https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?semt=ais_hybrid&w=740");
-        //    }
-
-        //}
-
+       
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
             if (dgvArticulos.CurrentRow != null)
             {
                 Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                //cargarImagen(seleccionado.Imagen);
             }
         }
 
@@ -262,19 +242,6 @@ namespace Grupo_7A
                 MessageBox.Show("Por favor, seleccione el criterio para filtrar");
                 return true;
             }
-            //if (cbxCriterio.SelectedItem.ToString() == "Código")
-            //{
-                //if (string.IsNullOrEmpty(txtFiltroAvanzado.Text))
-                //{
-                   // MessageBox.Show("Debes cargar el filtro numérico");
-                    //return true;
-                //}
-                //if (!(soloNumeros(txtFiltroAvanzado.Text)))
-                //{
-                    //MessageBox.Show("Solo nros para filtrar por un campo numérico");
-                    //return true;
-                //}
-            //}
             return false;
         }
 
@@ -329,6 +296,13 @@ namespace Grupo_7A
 
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void btnSucursales_Click(object sender, EventArgs e)
+        {
+            frmSucursales sucursales = new frmSucursales();
+            sucursales.ShowDialog();
+
         }
     }
 }

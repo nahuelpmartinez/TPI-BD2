@@ -52,3 +52,21 @@ C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\negocio\obj\Debug\nego
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\negocio\obj\Debug\negocio.dll
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\negocio\obj\Debug\negocio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\negocio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\negocio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\dominio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\dominio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\negocio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\negocio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\dominio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\bin\Debug\dominio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.csproj.Up2Date
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\negocio\obj\Debug\negocio.pdb

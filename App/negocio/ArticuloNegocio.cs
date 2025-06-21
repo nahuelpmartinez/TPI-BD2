@@ -139,23 +139,6 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-        //public void modificarImagen(Articulo articulo)
-        //{
-        //    AccesoDatos datos = new AccesoDatos();
-        //    try
-        //    {
-        //        datos.setearConsulta("Update IMAGENES set ImagenUrl = @imagenUrl Where IdArticulo = @idArt");
-        //        datos.setearParametro("@imagenUrl", articulo.Imagen);
-        //        datos.setearParametro("@idArt", articulo.Id);
-        //        datos.ejecutarAccion();
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        throw ex;
-        //    }
-        //}
-
         public void eliminar(int id)
         {
             //Acá se dispararía el trigger TR_Eliminar_Articulo

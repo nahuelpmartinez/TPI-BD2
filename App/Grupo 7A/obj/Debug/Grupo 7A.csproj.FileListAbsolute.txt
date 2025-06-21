@@ -120,3 +120,21 @@ C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\Grupo 7A\bin\Debug\neg
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\Grupo 7A\bin\Debug\dominio.pdb
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\Grupo 7A\bin\Debug\negocio.pdb
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe.config
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAdministrar.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmArticulos.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarArticulo.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.csproj.GenerateResource.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.csproj.Up2Date
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.pdb

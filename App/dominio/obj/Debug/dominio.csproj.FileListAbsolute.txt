@@ -28,3 +28,15 @@ C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\domi
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
 C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\bin\Debug\dominio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\bin\Debug\dominio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\bin\Debug\dominio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\bin\Debug\dominio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\dominio\obj\Debug\dominio.pdb

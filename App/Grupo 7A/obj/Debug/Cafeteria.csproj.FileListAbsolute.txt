@@ -1,0 +1,39 @@
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.dll
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.pdb
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.AssemblyReference.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe.config
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAdministrar.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmArticulos.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarArticulo.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.GenerateResource.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.CoreCompileInputs.cache
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.Up2Date
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe.config
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.exe
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\Grupo 7A.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.dll
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\dominio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\bin\Debug\negocio.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.AssemblyReference.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe.config
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAdministrar.resources
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmArticulos.resources
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarArticulo.resources
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.Properties.Resources.resources
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.GenerateResource.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.CoreCompileInputs.cache
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Cafeteria.csproj.Up2Date
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.exe
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.pdb
+Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.Menu.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmSucursales.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarSucursales.resources
