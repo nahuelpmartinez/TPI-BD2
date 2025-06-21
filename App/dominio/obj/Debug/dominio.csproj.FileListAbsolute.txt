@@ -1,0 +1,30 @@
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\agustin\Desktop\TP2 - PROGRA\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\nahue\Downloads\repo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\maria\Desktop\TpProgramacionArticulo\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\agustin\Desktop\TP 2 - PUSH\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\bin\Debug\dominio.dll
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\bin\Debug\dominio.pdb
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.dll
+C:\Users\nahue\Downloads\App TPI BD2\tp-winform-equipo-7a\dominio\obj\Debug\dominio.pdb
