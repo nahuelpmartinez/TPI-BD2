@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.gbFiltros = new System.Windows.Forms.GroupBox();
             this.lblCriterio = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnMoverStock = new System.Windows.Forms.Button();
             this.btnIngresarStock = new System.Windows.Forms.Button();
-            this.btnModificarStock = new System.Windows.Forms.Button();
+            this.btnReducirStock = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnReporteArticulo = new System.Windows.Forms.Button();
             this.btnReporteSucursal = new System.Windows.Forms.Button();
@@ -192,25 +192,25 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria Math", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria Math", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvArticulos.Location = new System.Drawing.Point(20, 22);
             this.dgvArticulos.Margin = new System.Windows.Forms.Padding(6);
             this.dgvArticulos.Name = "dgvArticulos";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArticulos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArticulos.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.Size = new System.Drawing.Size(1520, 503);
             this.dgvArticulos.TabIndex = 5;
@@ -342,7 +342,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnMoverStock);
             this.groupBox1.Controls.Add(this.btnIngresarStock);
-            this.groupBox1.Controls.Add(this.btnModificarStock);
+            this.groupBox1.Controls.Add(this.btnReducirStock);
             this.groupBox1.Location = new System.Drawing.Point(1101, 776);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
@@ -374,15 +374,16 @@
             this.btnIngresarStock.UseVisualStyleBackColor = true;
             this.btnIngresarStock.Click += new System.EventHandler(this.btnIngresarStock_Click);
             // 
-            // btnModificarStock
+            // btnReducirStock
             // 
-            this.btnModificarStock.Location = new System.Drawing.Point(222, 37);
-            this.btnModificarStock.Margin = new System.Windows.Forms.Padding(6);
-            this.btnModificarStock.Name = "btnModificarStock";
-            this.btnModificarStock.Size = new System.Drawing.Size(166, 42);
-            this.btnModificarStock.TabIndex = 1;
-            this.btnModificarStock.Text = "Modificar";
-            this.btnModificarStock.UseVisualStyleBackColor = true;
+            this.btnReducirStock.Location = new System.Drawing.Point(222, 37);
+            this.btnReducirStock.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReducirStock.Name = "btnReducirStock";
+            this.btnReducirStock.Size = new System.Drawing.Size(166, 42);
+            this.btnReducirStock.TabIndex = 1;
+            this.btnReducirStock.Text = "Reducir";
+            this.btnReducirStock.UseVisualStyleBackColor = true;
+            this.btnReducirStock.Click += new System.EventHandler(this.btnReducirStock_Click);
             // 
             // groupBox2
             // 
@@ -482,7 +483,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnMoverStock;
         private System.Windows.Forms.Button btnIngresarStock;
-        private System.Windows.Forms.Button btnModificarStock;
+        private System.Windows.Forms.Button btnReducirStock;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnReporteArticulo;
         private System.Windows.Forms.Button btnReporteSucursal;

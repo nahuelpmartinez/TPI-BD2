@@ -1,6 +1,7 @@
 ﻿using dominio;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,10 +49,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                //Inserta en la Tabla Stock
-
-                datos.setearConsulta("Insert into Stock(IdArticulo, IdSucursal, Cantidad) " +
-                    "values(@IdArticulo, @IdSucursal, @Cantidad)");
+                datos.setearSP("SP_ActualizarOInsertarStock");
 
                 datos.setearParametro("@IdArticulo", nuevo.Id);
                 datos.setearParametro("@IdSucursal", nuevo.IdSucursal);
@@ -72,31 +70,32 @@ namespace negocio
             }
         }
 
-        //public void modificar(int idArticulo, int idSucursal, int Cantidad)
-        //{
-        //    AccesoDatos datos = new AccesoDatos();
-        //    try
-        //    {
-        //        // Modifica en tabla Stock
-        //        datos.setearConsulta("Update Stock set Cantidad = @Cantidad " +
-        //            "Where IdArticulo = @IdArticulo, IdSucursal = @IdSucursal");
-        //        datos.setearParametro("@IdArticulo", idArticulo);
-        //        datos.setearParametro("@IdSucursal", idSucursal);
-        //        datos.setearParametro("@Cantidad", Cantidad);
-        //        datos.ejecutarAccion();
+        public void reducirStock(Stock nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearSP("SP_ReducirStock");
 
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        throw ex;
-        //    }
-        //    finally
-        //    {
-        //        datos.cerrarConexion();
-        //    }
-        //}
-
+                datos.setearParametro("@IdArticulo", nuevo.Id);
+                datos.setearParametro("@IdSucursal", nuevo.IdSucursal);
+                datos.setearParametro("@Cantidad", nuevo.Cantidad);
+                datos.ejecutarAccion();
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException("Error de base de datos al dar de baja stock: " + sqlEx.Message, sqlEx);
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("Error inesperado al dar de baja stock: " + ex.Message, ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+    
         public void eliminar(int idArticulo, int idSucursal)
         {
             //Acá se dispararía el trigger TR_Eliminar_Sucursal

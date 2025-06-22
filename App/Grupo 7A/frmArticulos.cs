@@ -306,10 +306,26 @@ namespace Grupo_7A
             {
                 Articulo articuloSeleccionado;
                 articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                //Sucursal sucursalSeleccionada;
-                //sucursalSeleccionada = (Sucursal)cbx
 
-                frmAgregarStock agregarStock = new frmAgregarStock(articuloSeleccionado);
+                frmAgregarStock agregarStock = new frmAgregarStock(articuloSeleccionado, true);
+                agregarStock.ShowDialog();
+                cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnReducirStock_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Articulo articuloSeleccionado;
+                articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+                frmAgregarStock agregarStock = new frmAgregarStock(articuloSeleccionado, false);
                 agregarStock.ShowDialog();
                 cargar();
             }
@@ -325,6 +341,8 @@ namespace Grupo_7A
             frmMoverStock moverStock = new frmMoverStock();
             moverStock.ShowDialog();
         }
+
+
     }
 }
 
