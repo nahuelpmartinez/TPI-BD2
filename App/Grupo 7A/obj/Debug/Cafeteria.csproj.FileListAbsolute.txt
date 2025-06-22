@@ -37,3 +37,5 @@ Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo 7A.pdb
 Z:\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.Menu.resources
 C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmSucursales.resources
 C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarSucursales.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmMoverStock.resources
+C:\Mac\Home\Desktop\TPI BD2\TPI-BD2\App\Grupo 7A\obj\Debug\Grupo_7A.frmAgregarStock.resources

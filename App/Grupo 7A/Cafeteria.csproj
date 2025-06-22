@@ -52,6 +52,12 @@
     <Compile Include="frmAdministrar.Designer.cs">
       <DependentUpon>frmAdministrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarStock.Designer.cs">
+      <DependentUpon>frmAgregarStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarSucursales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="frmAgregarArticulo.Designer.cs">
       <DependentUpon>frmAgregarArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMoverStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoverStock.Designer.cs">
+      <DependentUpon>frmMoverStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSucursales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,9 @@
     <EmbeddedResource Include="frmAdministrar.resx">
       <DependentUpon>frmAdministrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarStock.resx">
+      <DependentUpon>frmAgregarStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarSucursales.resx">
       <DependentUpon>frmAgregarSucursales.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarArticulo.resx">
       <DependentUpon>frmAgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoverStock.resx">
+      <DependentUpon>frmMoverStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSucursales.resx">
       <DependentUpon>frmSucursales.cs</DependentUpon>

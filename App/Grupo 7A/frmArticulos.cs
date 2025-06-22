@@ -91,11 +91,6 @@ namespace Grupo_7A
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.Format = "c2";
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.FormatProvider = arCulture;
                 dgvArticulos.Columns["Precio"].DefaultCellStyle.NullValue = "0.00";
-                //if (listaArticulos.Count > 0)
-                //{
-                //    cargarImagen(listaArticulos[0].Imagen);
-                //}
-             
 
                 if (dgvArticulos.Rows.Count > 0)
                 {
@@ -304,5 +299,32 @@ namespace Grupo_7A
             sucursales.ShowDialog();
 
         }
+
+        private void btnIngresarStock_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Articulo articuloSeleccionado;
+                articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                //Sucursal sucursalSeleccionada;
+                //sucursalSeleccionada = (Sucursal)cbx
+
+                frmAgregarStock agregarStock = new frmAgregarStock(articuloSeleccionado);
+                agregarStock.ShowDialog();
+                cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnMoverStock_Click(object sender, EventArgs e)
+        {
+            frmMoverStock moverStock = new frmMoverStock();
+            moverStock.ShowDialog();
+        }
     }
 }
+

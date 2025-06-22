@@ -76,8 +76,6 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-
-
         public void modificar(Sucursal modificar)
         {
             AccesoDatos datos = new AccesoDatos();

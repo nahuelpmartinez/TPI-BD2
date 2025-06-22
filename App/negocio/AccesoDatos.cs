@@ -22,6 +22,8 @@ namespace negocio
         {
             //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=GestionStockDB; integrated security=true");
             conexion = new SqlConnection("server=192.168.100.66; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
+            //conexion = new SqlConnection("server=192.168.1.10; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
+
 
             comando = new SqlCommand();
         }

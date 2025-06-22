@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.gbFiltros = new System.Windows.Forms.GroupBox();
             this.lblCriterio = new System.Windows.Forms.Label();
@@ -48,23 +48,31 @@
             this.btnAdmMarcas = new System.Windows.Forms.Button();
             this.btnAdmCategorias = new System.Windows.Forms.Button();
             this.gbAdministrar = new System.Windows.Forms.GroupBox();
+            this.btnSucursales = new System.Windows.Forms.Button();
             this.gbxBusquedaRapida = new System.Windows.Forms.GroupBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.slblVacio = new System.Windows.Forms.ToolStripStatusLabel();
             this.slblFechaHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnStock = new System.Windows.Forms.Button();
-            this.btnSucursales = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnMoverStock = new System.Windows.Forms.Button();
+            this.btnIngresarStock = new System.Windows.Forms.Button();
+            this.btnModificarStock = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnReporteArticulo = new System.Windows.Forms.Button();
+            this.btnReporteSucursal = new System.Windows.Forms.Button();
             this.gbFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             this.gbAdministrar.SuspendLayout();
             this.gbxBusquedaRapida.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtBusquedaRapida
             // 
-            this.txtBusquedaRapida.Location = new System.Drawing.Point(34, 52);
+            this.txtBusquedaRapida.Location = new System.Drawing.Point(32, 67);
             this.txtBusquedaRapida.Margin = new System.Windows.Forms.Padding(6);
             this.txtBusquedaRapida.Name = "txtBusquedaRapida";
             this.txtBusquedaRapida.Size = new System.Drawing.Size(348, 31);
@@ -81,11 +89,11 @@
             this.gbFiltros.Controls.Add(this.rbtnNombre);
             this.gbFiltros.Controls.Add(this.rbtnCodigo);
             this.gbFiltros.Controls.Add(this.btnFiltrar);
-            this.gbFiltros.Location = new System.Drawing.Point(30, 641);
+            this.gbFiltros.Location = new System.Drawing.Point(30, 620);
             this.gbFiltros.Margin = new System.Windows.Forms.Padding(6);
             this.gbFiltros.Name = "gbFiltros";
             this.gbFiltros.Padding = new System.Windows.Forms.Padding(6);
-            this.gbFiltros.Size = new System.Drawing.Size(602, 289);
+            this.gbFiltros.Size = new System.Drawing.Size(602, 297);
             this.gbFiltros.TabIndex = 3;
             this.gbFiltros.TabStop = false;
             this.gbFiltros.Text = "Filtrar por:";
@@ -184,25 +192,25 @@
             // dgvArticulos
             // 
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cambria Math", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria Math", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArticulos.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvArticulos.Location = new System.Drawing.Point(20, 22);
             this.dgvArticulos.Margin = new System.Windows.Forms.Padding(6);
             this.dgvArticulos.Name = "dgvArticulos";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArticulos.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArticulos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.Size = new System.Drawing.Size(1520, 503);
             this.dgvArticulos.TabIndex = 5;
@@ -221,12 +229,12 @@
             // 
             // btnEliminarFisico
             // 
-            this.btnEliminarFisico.Location = new System.Drawing.Point(904, 553);
+            this.btnEliminarFisico.Location = new System.Drawing.Point(388, 553);
             this.btnEliminarFisico.Margin = new System.Windows.Forms.Padding(6);
             this.btnEliminarFisico.Name = "btnEliminarFisico";
             this.btnEliminarFisico.Size = new System.Drawing.Size(168, 44);
             this.btnEliminarFisico.TabIndex = 2;
-            this.btnEliminarFisico.Text = "Eliminar de BD";
+            this.btnEliminarFisico.Text = "Eliminar";
             this.btnEliminarFisico.UseVisualStyleBackColor = true;
             this.btnEliminarFisico.Click += new System.EventHandler(this.btnEliminarFisico_Click);
             // 
@@ -266,7 +274,6 @@
             // gbAdministrar
             // 
             this.gbAdministrar.Controls.Add(this.btnSucursales);
-            this.gbAdministrar.Controls.Add(this.btnStock);
             this.gbAdministrar.Controls.Add(this.btnAdmMarcas);
             this.gbAdministrar.Controls.Add(this.btnAdmCategorias);
             this.gbAdministrar.Location = new System.Drawing.Point(658, 769);
@@ -278,14 +285,25 @@
             this.gbAdministrar.TabStop = false;
             this.gbAdministrar.Text = "Administrar:";
             // 
+            // btnSucursales
+            // 
+            this.btnSucursales.Location = new System.Drawing.Point(32, 98);
+            this.btnSucursales.Margin = new System.Windows.Forms.Padding(6);
+            this.btnSucursales.Name = "btnSucursales";
+            this.btnSucursales.Size = new System.Drawing.Size(156, 42);
+            this.btnSucursales.TabIndex = 3;
+            this.btnSucursales.Text = "Sucursales";
+            this.btnSucursales.UseVisualStyleBackColor = true;
+            this.btnSucursales.Click += new System.EventHandler(this.btnSucursales_Click);
+            // 
             // gbxBusquedaRapida
             // 
             this.gbxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
-            this.gbxBusquedaRapida.Location = new System.Drawing.Point(656, 641);
+            this.gbxBusquedaRapida.Location = new System.Drawing.Point(656, 620);
             this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbxBusquedaRapida.Name = "gbxBusquedaRapida";
             this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gbxBusquedaRapida.Size = new System.Drawing.Size(418, 119);
+            this.gbxBusquedaRapida.Size = new System.Drawing.Size(418, 140);
             this.gbxBusquedaRapida.TabIndex = 11;
             this.gbxBusquedaRapida.TabStop = false;
             this.gbxBusquedaRapida.Text = "Busqueda Rapida";
@@ -320,32 +338,92 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnStock
+            // groupBox1
             // 
-            this.btnStock.Location = new System.Drawing.Point(32, 92);
-            this.btnStock.Margin = new System.Windows.Forms.Padding(6);
-            this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(156, 42);
-            this.btnStock.TabIndex = 2;
-            this.btnStock.Text = "Stock";
-            this.btnStock.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.btnMoverStock);
+            this.groupBox1.Controls.Add(this.btnIngresarStock);
+            this.groupBox1.Controls.Add(this.btnModificarStock);
+            this.groupBox1.Location = new System.Drawing.Point(1101, 776);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Size = new System.Drawing.Size(416, 141);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Stock:";
             // 
-            // btnSucursales
+            // btnMoverStock
             // 
-            this.btnSucursales.Location = new System.Drawing.Point(222, 91);
-            this.btnSucursales.Margin = new System.Windows.Forms.Padding(6);
-            this.btnSucursales.Name = "btnSucursales";
-            this.btnSucursales.Size = new System.Drawing.Size(166, 42);
-            this.btnSucursales.TabIndex = 3;
-            this.btnSucursales.Text = "Sucursales";
-            this.btnSucursales.UseVisualStyleBackColor = true;
-            this.btnSucursales.Click += new System.EventHandler(this.btnSucursales_Click);
+            this.btnMoverStock.Location = new System.Drawing.Point(32, 91);
+            this.btnMoverStock.Margin = new System.Windows.Forms.Padding(6);
+            this.btnMoverStock.Name = "btnMoverStock";
+            this.btnMoverStock.Size = new System.Drawing.Size(166, 42);
+            this.btnMoverStock.TabIndex = 2;
+            this.btnMoverStock.Text = "Mover";
+            this.btnMoverStock.UseVisualStyleBackColor = true;
+            this.btnMoverStock.Click += new System.EventHandler(this.btnMoverStock_Click);
+            // 
+            // btnIngresarStock
+            // 
+            this.btnIngresarStock.Location = new System.Drawing.Point(32, 37);
+            this.btnIngresarStock.Margin = new System.Windows.Forms.Padding(6);
+            this.btnIngresarStock.Name = "btnIngresarStock";
+            this.btnIngresarStock.Size = new System.Drawing.Size(166, 42);
+            this.btnIngresarStock.TabIndex = 0;
+            this.btnIngresarStock.Text = "Ingresar";
+            this.btnIngresarStock.UseVisualStyleBackColor = true;
+            this.btnIngresarStock.Click += new System.EventHandler(this.btnIngresarStock_Click);
+            // 
+            // btnModificarStock
+            // 
+            this.btnModificarStock.Location = new System.Drawing.Point(222, 37);
+            this.btnModificarStock.Margin = new System.Windows.Forms.Padding(6);
+            this.btnModificarStock.Name = "btnModificarStock";
+            this.btnModificarStock.Size = new System.Drawing.Size(166, 42);
+            this.btnModificarStock.TabIndex = 1;
+            this.btnModificarStock.Text = "Modificar";
+            this.btnModificarStock.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnReporteArticulo);
+            this.groupBox2.Controls.Add(this.btnReporteSucursal);
+            this.groupBox2.Location = new System.Drawing.Point(1101, 620);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox2.Size = new System.Drawing.Size(416, 140);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Reportes:";
+            // 
+            // btnReporteArticulo
+            // 
+            this.btnReporteArticulo.Location = new System.Drawing.Point(32, 83);
+            this.btnReporteArticulo.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReporteArticulo.Name = "btnReporteArticulo";
+            this.btnReporteArticulo.Size = new System.Drawing.Size(356, 42);
+            this.btnReporteArticulo.TabIndex = 2;
+            this.btnReporteArticulo.Text = "Stock por Articulo";
+            this.btnReporteArticulo.UseVisualStyleBackColor = true;
+            // 
+            // btnReporteSucursal
+            // 
+            this.btnReporteSucursal.Location = new System.Drawing.Point(32, 36);
+            this.btnReporteSucursal.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReporteSucursal.Name = "btnReporteSucursal";
+            this.btnReporteSucursal.Size = new System.Drawing.Size(356, 42);
+            this.btnReporteSucursal.TabIndex = 0;
+            this.btnReporteSucursal.Text = "Stock por Sucursal";
+            this.btnReporteSucursal.UseVisualStyleBackColor = true;
             // 
             // frmArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1576, 945);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.gbxBusquedaRapida);
             this.Controls.Add(this.gbAdministrar);
@@ -369,6 +447,8 @@
             this.gbxBusquedaRapida.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,8 +478,14 @@
         private System.Windows.Forms.ToolStripStatusLabel slblVacio;
         private System.Windows.Forms.ToolStripStatusLabel slblFechaHora;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button btnSucursales;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnMoverStock;
+        private System.Windows.Forms.Button btnIngresarStock;
+        private System.Windows.Forms.Button btnModificarStock;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnReporteArticulo;
+        private System.Windows.Forms.Button btnReporteSucursal;
     }
 }
 

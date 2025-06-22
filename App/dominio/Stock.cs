@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-    internal class Stock
+    public class Stock
     {
         public int Id { get; set; }
-        public Sucursal Sucursal { get; set; }
+        public int IdSucursal { get; set; }
 
         public int Cantidad { get; set; }
     }
