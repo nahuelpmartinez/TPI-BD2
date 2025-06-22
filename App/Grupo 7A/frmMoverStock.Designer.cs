@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.gbCargarArticulo = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxDestino = new System.Windows.Forms.ComboBox();
+            this.cbxOrigen = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblNombreArticulo = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigoArticulo = new System.Windows.Forms.TextBox();
+            this.txtNombreArticulo = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.gbCargarArticulo.SuspendLayout();
@@ -46,16 +46,16 @@
             // 
             // gbCargarArticulo
             // 
-            this.gbCargarArticulo.Controls.Add(this.textBox1);
+            this.gbCargarArticulo.Controls.Add(this.txtCantidad);
             this.gbCargarArticulo.Controls.Add(this.label3);
-            this.gbCargarArticulo.Controls.Add(this.comboBox2);
-            this.gbCargarArticulo.Controls.Add(this.comboBox1);
+            this.gbCargarArticulo.Controls.Add(this.cbxDestino);
+            this.gbCargarArticulo.Controls.Add(this.cbxOrigen);
             this.gbCargarArticulo.Controls.Add(this.label2);
             this.gbCargarArticulo.Controls.Add(this.label1);
             this.gbCargarArticulo.Controls.Add(this.lblDireccion);
             this.gbCargarArticulo.Controls.Add(this.lblNombreArticulo);
-            this.gbCargarArticulo.Controls.Add(this.txtDireccion);
-            this.gbCargarArticulo.Controls.Add(this.txtNombre);
+            this.gbCargarArticulo.Controls.Add(this.txtCodigoArticulo);
+            this.gbCargarArticulo.Controls.Add(this.txtNombreArticulo);
             this.gbCargarArticulo.Location = new System.Drawing.Point(231, 68);
             this.gbCargarArticulo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gbCargarArticulo.Name = "gbCargarArticulo";
@@ -64,13 +64,13 @@
             this.gbCargarArticulo.TabIndex = 24;
             this.gbCargarArticulo.TabStop = false;
             // 
-            // textBox1
+            // txtCantidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 356);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 31);
-            this.textBox1.TabIndex = 7;
+            this.txtCantidad.Location = new System.Drawing.Point(39, 356);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(240, 31);
+            this.txtCantidad.TabIndex = 7;
             // 
             // label3
             // 
@@ -82,21 +82,21 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Cantidad";
             // 
-            // comboBox2
+            // cbxDestino
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(39, 277);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(240, 33);
-            this.comboBox2.TabIndex = 5;
+            this.cbxDestino.FormattingEnabled = true;
+            this.cbxDestino.Location = new System.Drawing.Point(39, 277);
+            this.cbxDestino.Name = "cbxDestino";
+            this.cbxDestino.Size = new System.Drawing.Size(240, 33);
+            this.cbxDestino.TabIndex = 5;
             // 
-            // comboBox1
+            // cbxOrigen
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(39, 202);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 33);
-            this.comboBox1.TabIndex = 4;
+            this.cbxOrigen.FormattingEnabled = true;
+            this.cbxOrigen.Location = new System.Drawing.Point(39, 202);
+            this.cbxOrigen.Name = "cbxOrigen";
+            this.cbxOrigen.Size = new System.Drawing.Size(240, 33);
+            this.cbxOrigen.TabIndex = 4;
             // 
             // label2
             // 
@@ -131,28 +131,28 @@
             // lblNombreArticulo
             // 
             this.lblNombreArticulo.AutoSize = true;
-            this.lblNombreArticulo.Location = new System.Drawing.Point(34, 95);
+            this.lblNombreArticulo.Location = new System.Drawing.Point(34, 100);
             this.lblNombreArticulo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNombreArticulo.Name = "lblNombreArticulo";
             this.lblNombreArticulo.Size = new System.Drawing.Size(171, 25);
             this.lblNombreArticulo.TabIndex = 1;
             this.lblNombreArticulo.Text = "Nombre Articulo:";
             // 
-            // txtDireccion
+            // txtCodigoArticulo
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(39, 58);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(6);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(240, 31);
-            this.txtDireccion.TabIndex = 1;
+            this.txtCodigoArticulo.Location = new System.Drawing.Point(39, 58);
+            this.txtCodigoArticulo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCodigoArticulo.Name = "txtCodigoArticulo";
+            this.txtCodigoArticulo.Size = new System.Drawing.Size(240, 31);
+            this.txtCodigoArticulo.TabIndex = 1;
             // 
-            // txtNombre
+            // txtNombreArticulo
             // 
-            this.txtNombre.Location = new System.Drawing.Point(39, 131);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(6);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(240, 31);
-            this.txtNombre.TabIndex = 0;
+            this.txtNombreArticulo.Location = new System.Drawing.Point(39, 131);
+            this.txtNombreArticulo.Margin = new System.Windows.Forms.Padding(6);
+            this.txtNombreArticulo.Name = "txtNombreArticulo";
+            this.txtNombreArticulo.Size = new System.Drawing.Size(240, 31);
+            this.txtNombreArticulo.TabIndex = 0;
             // 
             // btnCancelar
             // 
@@ -163,6 +163,7 @@
             this.btnCancelar.TabIndex = 23;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
@@ -173,6 +174,7 @@
             this.btnAceptar.TabIndex = 22;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // frmMoverStock
             // 
@@ -196,14 +198,14 @@
         private System.Windows.Forms.GroupBox gbCargarArticulo;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Label lblNombreArticulo;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigoArticulo;
+        private System.Windows.Forms.TextBox txtNombreArticulo;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxDestino;
+        private System.Windows.Forms.ComboBox cbxOrigen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

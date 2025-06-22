@@ -338,8 +338,20 @@ namespace Grupo_7A
 
         private void btnMoverStock_Click(object sender, EventArgs e)
         {
-            frmMoverStock moverStock = new frmMoverStock();
-            moverStock.ShowDialog();
+            try
+            {
+                Articulo articuloSeleccionado;
+                articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+                frmMoverStock moverStock = new frmMoverStock(articuloSeleccionado);
+                moverStock.ShowDialog();
+                cargar();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
 
 

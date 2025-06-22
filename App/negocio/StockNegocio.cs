@@ -95,25 +95,35 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-    
-        public void eliminar(int idArticulo, int idSucursal)
+
+        public void mover(Stock nuevo, int destino)
         {
-            //Acá se dispararía el trigger TR_Eliminar_Sucursal
+            AccesoDatos datos = new AccesoDatos();
             try
             {
-                AccesoDatos datos = new AccesoDatos();
-                datos.setearConsulta("Delete from Stock Where IdArticulo = @idArticulo AND IdSucursal = @idSucursal");
-                datos.setearParametro("@idArticulo", idArticulo);
-                datos.setearParametro("@idSucursal", idSucursal);
+                datos.setearSP("SP_MoverStockEntreSucursales");
 
+                datos.setearParametro("@IdArticulo", nuevo.Id);
+                datos.setearParametro("@IdSucursalOrigen", nuevo.IdSucursal);
+                datos.setearParametro("@IdSucursalDestino", destino);
+                datos.setearParametro("@CantidadAMover", nuevo.Cantidad);
                 datos.ejecutarAccion();
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException(sqlEx.Message, sqlEx);
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new ApplicationException("Error inesperado al dar de baja stock: " + ex.Message, ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
+
+
 
         //public int ultimoAgregado()
         //{

@@ -47,7 +47,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Insert into MARCAS(Descripcion) Values(@Descripcion)");
+                datos.setearConsulta("Insert into Marca(Descripcion) Values(@Descripcion)");
                 datos.setearParametro("@Descripcion", nuevo.Descripcion);
                 datos.ejecutarAccion();
             }
@@ -67,7 +67,7 @@ namespace negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update MARCAS set Descripcion = @Descripcion Where Id = @Id");
+                datos.setearConsulta("Update Marca set Descripcion = @Descripcion Where Id = @Id");
                 datos.setearParametro("@Descripcion", modificar.Descripcion);
                 datos.setearParametro("@Id", modificar.Id);
 
@@ -89,7 +89,7 @@ namespace negocio
             try
             {
                 AccesoDatos datos = new AccesoDatos();
-                datos.setearConsulta("delete from MARCAS where id = @id");
+                datos.setearConsulta("delete from Marca where id = @id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
             }
