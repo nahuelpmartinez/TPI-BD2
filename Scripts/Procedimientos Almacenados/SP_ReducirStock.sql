@@ -1,5 +1,3 @@
---Reduce la cantidad de stock para un artículo en una sucursal.
---Valida que la cantidad a reducir no sea mayor que el stock actual.
 USE CafeteriaStockDB;
 GO
 CREATE PROCEDURE SP_ReducirStock

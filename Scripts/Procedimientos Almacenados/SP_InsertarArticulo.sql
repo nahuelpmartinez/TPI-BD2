@@ -1,4 +1,3 @@
---Insertar un nuevo artículo en la tabla Articulo.
 USE CafeteriaStockDB;
 GO 
 CREATE PROCEDURE SP_InsertarArticulo

@@ -1,7 +1,7 @@
 USE CafeteriaStockDB
 GO
 CREATE VIEW VW_StockTotalPorArticulo AS
-SELECT 
+SELECT
     a.Codigo AS Código,
     a.Nombre AS Articulo,
     SUM(st.Cantidad) AS StockTotal

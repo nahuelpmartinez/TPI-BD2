@@ -1,6 +1,5 @@
 USE CafeteriaStockDB;
 GO
-
 -- 1. Insertar datos en la tabla Categoria
 PRINT 'Insertando datos en Categoria...';
 INSERT INTO Categoria (Descripcion, Estado) VALUES
@@ -11,7 +10,6 @@ INSERT INTO Categoria (Descripcion, Estado) VALUES
 ('Insumos Generales', 1),
 ('Snacks', 1);
 GO
-
 -- 2. Insertar datos en la tabla Marca
 PRINT 'Insertando datos en Marca...';
 INSERT INTO Marca (Descripcion, Estado) VALUES
@@ -23,15 +21,13 @@ INSERT INTO Marca (Descripcion, Estado) VALUES
 ('Agua Pura', 1),
 ('Snack Delicioso', 1);
 GO
-
 -- 3. Insertar datos en la tabla Sucursal
 PRINT 'Insertando datos en Sucursal...';
 INSERT INTO Sucursal (Nombre, Direccion, Estado) VALUES
-('Sucursal Central', 'Av. Siempre Viva 742, Springfield', 1),
+('Deposito', 'Av. Siempre Viva 742, Springfield', 1),
 ('Sucursal Norte', 'Calle Falsa 123, Sector Industrial', 1),
 ('Sucursal Sur', 'Blvd. de los Sueños Rotos 45, Zona Residencial', 1);
 GO
-
 -- 4. Insertar datos en la tabla Articulo
 PRINT 'Insertando datos en Articulo...';
 INSERT INTO Articulo (Nombre, Codigo, PrecioUnidad, IdMarca, IdCategoria, Estado) VALUES
@@ -58,24 +54,21 @@ INSERT INTO Articulo (Nombre, Codigo, PrecioUnidad, IdMarca, IdCategoria, Estado
 ('Barra de Cereal', 'BARRAC001', 1.75, (SELECT IdMarca FROM Marca WHERE Descripcion = 'Snack Delicioso'), (SELECT IdCategoria FROM Categoria WHERE Descripcion = 'Snacks'), 1),
 ('Papas Fritas 50g', 'PAPAS001', 2.10, (SELECT IdMarca FROM Marca WHERE Descripcion = 'Snack Delicioso'), (SELECT IdCategoria FROM Categoria WHERE Descripcion = 'Snacks'), 1);
 GO
-
 -- 5. Insertar datos en la tabla Stock
 PRINT 'Insertando datos en Stock...';
-
--- Sucursal Central
+-- Deposito
 INSERT INTO Stock (IdArticulo, IdSucursal, Cantidad) VALUES
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CAFE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 150),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'ESP001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 100),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LATTE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 120),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'TEN001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 80),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'JUGON001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 70),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'AGUA001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 200),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CROIS001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 90),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'MUFFCHOC001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 60),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'AZUCAR001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 50),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LECHE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 40),
-((SELECT IdArticulo FROM Articulo WHERE Codigo = 'BARRAC001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Central'), 110);
-
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CAFE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 150),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'ESP001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 100),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LATTE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 120),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'TEN001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 80),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'JUGON001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 70),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'AGUA001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 200),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CROIS001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 90),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'MUFFCHOC001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 60),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'AZUCAR001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 50),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LECHE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 40),
+((SELECT IdArticulo FROM Articulo WHERE Codigo = 'BARRAC001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Deposito'), 110);
 -- Sucursal Norte
 INSERT INTO Stock (IdArticulo, IdSucursal, Cantidad) VALUES
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CAFE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Norte'), 100),
@@ -87,7 +80,6 @@ INSERT INTO Stock (IdArticulo, IdSucursal, Cantidad) VALUES
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'AZUCAR001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Norte'), 30),
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LECHE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Norte'), 25),
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'PAPAS001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Norte'), 85);
-
 -- Sucursal Sur
 INSERT INTO Stock (IdArticulo, IdSucursal, Cantidad) VALUES
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'CAFE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Sur'), 90),
@@ -98,5 +90,4 @@ INSERT INTO Stock (IdArticulo, IdSucursal, Cantidad) VALUES
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'MUFFCHOC001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Sur'), 50),
 ((SELECT IdArticulo FROM Articulo WHERE Codigo = 'LECHE001'), (SELECT IdSucursal FROM Sucursal WHERE Nombre = 'Sucursal Sur'), 35);
 GO
-
 PRINT 'Datos de ejemplo insertados exitosamente en CafeteriaStockDB.';

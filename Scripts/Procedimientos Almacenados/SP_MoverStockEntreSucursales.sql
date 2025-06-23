@@ -1,6 +1,3 @@
---Mueve una cantidad específica de stock de un artículo
---desde una sucursal de origen a una de destino.
---Incluye validaciones para stock suficiente y sucursales diferentes.
 USE CafeteriaStockDB;
 GO
 CREATE PROCEDURE SP_MoverStockEntreSucursales

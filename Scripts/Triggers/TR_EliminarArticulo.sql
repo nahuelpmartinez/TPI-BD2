@@ -1,7 +1,3 @@
---Este trigger se ejecuta INSTEAD OF DELETE en la tabla Articulo.
---Verifica si el artículo a eliminar tiene stock.
---Si tiene stock, impide la eliminación y emite un mensaje.
---Si no tiene stock, procede con la eliminación del artículo.
 USE CafeteriaStockDB;
 GO
 CREATE TRIGGER TR_EliminarArticulo
@@ -10,27 +6,32 @@ INSTEAD OF DELETE
 AS
 BEGIN
     DECLARE @IdArticuloAEliminar INT;
-    DECLARE @TieneStock BIT;
+    DECLARE @TieneStockActivo BIT;
 
     SELECT @IdArticuloAEliminar = IdArticulo FROM DELETED;
 
     BEGIN TRY
-        SET @TieneStock = 0;
+        SET @TieneStockActivo = 0;
 
-        -- Verificar si el artículo tiene stock en alguna sucursal (cantidad > 0)
+        --Verificar si el artículo tiene stock activo (Cantidad > 0)
         IF EXISTS (SELECT 1 FROM Stock WHERE IdArticulo = @IdArticuloAEliminar AND Cantidad > 0)
         BEGIN
-            SET @TieneStock = 1;
+            SET @TieneStockActivo = 1;
         END
 
-        IF @TieneStock = 1
+        IF @TieneStockActivo = 1
         BEGIN
-            -- Si el artículo tiene stock, impedir la eliminación
-            RAISERROR('No se puede eliminar el artículo seleccionado ya que el mismo posee stock activo.', 16, 1);
+            -- Si el artículo tiene stock activo, impedir la eliminación
+            RAISERROR('No se puede eliminar el artículo ya que el mismo posee stock activo.', 16, 1);
         END
         ELSE
         BEGIN
-            -- Si el artículo NO tiene stock, proceder con la eliminación
+            -- Si el artículo NO tiene stock activo (Cant = 0 o no hay registros),
+            -- procedemos a eliminar cualquier registro de ese artículo en la tabla Stock.
+            DELETE FROM Stock
+            WHERE IdArticulo = @IdArticuloAEliminar;
+
+            --Si ya no hay referencias en Stock, podemos eliminar el artículo de la tabla Articulo.
             DELETE FROM Articulo
             WHERE IdArticulo = @IdArticuloAEliminar;
 
@@ -48,4 +49,4 @@ BEGIN
         RAISERROR(@ErrorMessage, @ErrorSeverity, @ErrorState);
     END CATCH;
 END;
-GO
+

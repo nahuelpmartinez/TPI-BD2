@@ -1,5 +1,3 @@
---Actualiza la cantidad de stock para un artículo en una sucursal,
---o inserta un nuevo registro de stock si no existe.
 USE CafeteriaStockDB;
 GO
 CREATE PROCEDURE SP_ActualizarOInsertarStock
@@ -20,7 +18,7 @@ BEGIN
             INSERT (IdArticulo, IdSucursal, Cantidad)
             VALUES (Source.IdArticulo, Source.IdSucursal, Source.Cantidad);
 
-        --PRINT 'Operación de stock (actualizar o insertar) completada exitosamente.';
+        PRINT 'Operación de stock (actualizar o insertar) completada exitosamente.';
 
     END TRY
     BEGIN CATCH
@@ -31,7 +29,6 @@ BEGIN
             @ErrorState = ERROR_STATE();
 
         RAISERROR(@ErrorMessage, @ErrorSeverity, @ErrorState);
-        --PRINT 'Error al realizar la operación de stock.';
+        PRINT 'Error al realizar la operación de stock.';
     END CATCH;
 END;
-GO

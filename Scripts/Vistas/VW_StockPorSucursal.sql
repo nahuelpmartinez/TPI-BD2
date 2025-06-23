@@ -2,6 +2,7 @@ USE CafeteriaStockDB
 GO
 CREATE VIEW VW_StockPorSucursal AS
 SELECT 
+    s.IdSucursal,
     s.Nombre AS Sucursal,
     a.Codigo AS Código,
     a.Nombre AS Articulo,

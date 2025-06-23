@@ -1,4 +1,3 @@
---Lista todos los artículos con su marca y categoría
 USE CafeteriaStockDB;
 GO
 CREATE PROCEDURE SP_ListarArticulos
@@ -34,4 +33,3 @@ BEGIN
         PRINT 'Error al listar los artículos.';
     END CATCH;
 END;
-GO
