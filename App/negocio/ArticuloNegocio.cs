@@ -96,30 +96,13 @@ namespace negocio
             }
         }
 
-
-        //public void agregarImagen(Articulo articulo)
-        //{
-        //    AccesoDatos datos = new AccesoDatos();
-        //    try
-        //    {
-        //        datos.setearConsulta("Insert into IMAGENES(IdArticulo, ImagenUrl) values(@IdArticulo, @Imagen)");
-        //        datos.setearParametro("@IdArticulo", articulo.Id);
-        //        datos.ejecutarAccion();
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //        throw ex;
-        //    }
-        //}
-
         public void modificar(Articulo modificar)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
                 // Modifica en tabla Articulos
-                datos.setearConsulta("Update ARTICULOS set Codigo = @codigo, Nombre = @nombre, Descripcion = @descripcion, IdMarca = @idMarca, IdCategoria = @idCategoria, Precio = @precio Where Id = @id");
+                datos.setearConsulta("Update Articulo set Codigo = @codigo, Nombre = @nombre, IdMarca = @idMarca, IdCategoria = @idCategoria, PrecioUnidad = @precio Where IdArticulo = @id");
                 datos.setearParametro("@codigo", modificar.Codigo);
                 datos.setearParametro("@nombre", modificar.Nombre);
                 datos.setearParametro("@idMarca", modificar.Marca.Id);
@@ -139,23 +122,29 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
         public void eliminar(int id)
         {
-            //Acá se dispararía el trigger TR_Eliminar_Articulo
+            AccesoDatos datos = new AccesoDatos();
             try
             {
-                AccesoDatos datos = new AccesoDatos();
-                datos.setearConsulta("delete from Articulo where IdArticulo = @id");
-                datos.setearParametro("@id", id);
+                datos.setearConsulta("delete from Articulo where IdArticulo = @IdArticuloAEliminar");
+                datos.setearParametro("@IdArticuloAEliminar", id);
                 datos.ejecutarAccion();
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException(sqlEx.Message, sqlEx);
             }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new ApplicationException("Error inesperado al dar de baja stock: " + ex.Message, ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
-
         public int ultimoAgregado()
         {
             AccesoDatos datos = new AccesoDatos();
@@ -192,7 +181,10 @@ namespace negocio
 
             try
             {
-                string consulta = "Select A.Id, Codigo, Nombre, A.Descripcion , IdMarca, M.Descripcion DescripcionM, IdCategoria, C.Descripcion DescripcionC ,Precio, I.ImagenUrl From ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I Where A.Id = I.IdArticulo And A.IdCategoria = C.Id And A.IdMarca = M.Id And ";
+                string consulta = "Select A.Id, Codigo, Nombre, A.Descripcion , IdMarca, " +
+                    "M.Descripcion DescripcionM, IdCategoria, C.Descripcion DescripcionC, " +
+                    "Precio, From Articulo A, Marca M, Categoria C " +
+                    "Where A.Id = I.IdArticulo And A.IdCategoria = C.Id And A.IdMarca = M.Id And ";
                 if (campo == "Código")
                 {
                     switch (criterio)
@@ -262,10 +254,6 @@ namespace negocio
                     aux.Codigo = (string)datos.Lector["Codigo"];
                     aux.Nombre = (string)datos.Lector["Nombre"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
-
-                    //dos formas de validar que las columnas no sean null
-                    //if (!(lector.IsDBNull(lector.GetOrdinal("urlImagen"))))
-                    //aux.urlImagen = (string)lector["urlImagen"];
 
 
                     aux.Marca = new Marca();

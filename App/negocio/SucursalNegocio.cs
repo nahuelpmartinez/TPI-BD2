@@ -104,18 +104,26 @@ namespace negocio
 
         public void eliminar(int id)
         {
+            AccesoDatos datos = new AccesoDatos();
             //Acá se dispararía el trigger TR_Eliminar_Sucursal
             try
             {
-                AccesoDatos datos = new AccesoDatos();
+                
                 datos.setearConsulta("Delete from Sucursal Where IdSucursal = @id");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
             }
+            catch (SqlException sqlEx)
+            {
+                throw new ApplicationException(sqlEx.Message, sqlEx);
+            }
             catch (Exception ex)
             {
-
-                throw ex;
+                throw new ApplicationException("Error inesperado al dar de baja stock: " + ex.Message, ex);
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
         }
 

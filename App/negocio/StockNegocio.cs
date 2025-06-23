@@ -84,7 +84,7 @@ namespace negocio
             }
             catch (SqlException sqlEx)
             {
-                throw new ApplicationException("Error de base de datos al dar de baja stock: " + sqlEx.Message, sqlEx);
+                throw new ApplicationException(sqlEx.Message, sqlEx);
             }
             catch (Exception ex)
             {
