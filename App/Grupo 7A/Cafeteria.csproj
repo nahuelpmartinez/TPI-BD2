@@ -82,6 +82,18 @@
     <Compile Include="frmMoverStock.Designer.cs">
       <DependentUpon>frmMoverStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStockPorArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPorArticulo.Designer.cs">
+      <DependentUpon>frmStockPorArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStockPorSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStockPorSucursal.Designer.cs">
+      <DependentUpon>frmStockPorSucursal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSucursales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMoverStock.resx">
       <DependentUpon>frmMoverStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPorArticulo.resx">
+      <DependentUpon>frmStockPorArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStockPorSucursal.resx">
+      <DependentUpon>frmStockPorSucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSucursales.resx">
       <DependentUpon>frmSucursales.cs</DependentUpon>

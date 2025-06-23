@@ -48,16 +48,6 @@ namespace Grupo_7A
                 dgvSucursales.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
                 dgvSucursales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                //CultureInfo arCulture = new CultureInfo("es-AR"); // Código para $ARS
-                //dgvSucursales.Columns["Precio"].DefaultCellStyle.Format = "c2";
-                //dgvSucursales.Columns["Precio"].DefaultCellStyle.FormatProvider = arCulture;
-                //dgvSucursales.Columns["Precio"].DefaultCellStyle.NullValue = "0.00";
-                //if (listaArticulos.Count > 0)
-                //{
-                //    cargarImagen(listaArticulos[0].Imagen);
-                //}
-
-
                 if (dgvSucursales.Rows.Count > 0)
                 {
                     cargar();
@@ -118,18 +108,23 @@ namespace Grupo_7A
             {
                 if (dgvSucursales.CurrentRow != null)
                 {
-                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar la sucursal seleccionada?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (respuesta == DialogResult.Yes)
                     {
                         seleccionado = (Sucursal)dgvSucursales.CurrentRow.DataBoundItem;
                         negocio.eliminar(seleccionado.Id);
+                        MessageBox.Show("Sucursal eliminada exitosamente");
                         cargar();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No existe artículo para eliminar.");
+                    MessageBox.Show("No existe sucursal para eliminar.");
                 }
+            }
+            catch (ApplicationException appEx)
+            {
+                MessageBox.Show(appEx.Message, "Error al Eliminar Sucursal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {

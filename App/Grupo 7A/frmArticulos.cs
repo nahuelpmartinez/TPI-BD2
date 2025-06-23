@@ -1,15 +1,16 @@
-﻿using System;
+﻿using dominio;
+using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using dominio;
-using negocio;
-using System.Globalization;
 
 namespace Grupo_7A
 {
@@ -52,7 +53,7 @@ namespace Grupo_7A
             {
                 if (dgvArticulos.CurrentRow != null)
                 {
-                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult respuesta = MessageBox.Show("¿Desea eliminar el artículo seleccionado?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (respuesta == DialogResult.Yes)
                     {
                         seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
@@ -64,6 +65,10 @@ namespace Grupo_7A
                 {
                     MessageBox.Show("No existe artículo para eliminar.");
                 }
+            }
+            catch (ApplicationException appEx)
+            {
+                MessageBox.Show(appEx.Message, "Error al Eliminar Artículo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
@@ -260,18 +265,6 @@ namespace Grupo_7A
             }
             return "";
         }
-
-        //private bool soloNumeros(string cadena)
-        //{
-            //foreach (char caracter in cadena)
-            //{
-                //if (!(char.IsNumber(caracter)))
-                    //return false;
-            //}
-            //return true;
-
-        //}
-
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
@@ -354,7 +347,17 @@ namespace Grupo_7A
             }
         }
 
+        private void btnStockPorSucursal_Click(object sender, EventArgs e)
+        {
+            frmStockPorSucursal stockPorSucursal = new frmStockPorSucursal();
+            stockPorSucursal.ShowDialog();
+        }
 
+        private void btnStockPorArticulo_Click(object sender, EventArgs e)
+        {
+            frmStockPorArticulo stockPorArticulo = new frmStockPorArticulo();
+            stockPorArticulo.ShowDialog();
+        }
     }
 }
 

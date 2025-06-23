@@ -69,16 +69,13 @@ namespace Grupo_7A
                 {
                     negocio.modificar(sucursal);
                     sucursal.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
-                    MessageBox.Show("Articulo modificado exitosamente");
+                    MessageBox.Show("Sucursal modificada exitosamente");
                 }
                 else
                 {
-                    //VALIDACIÓN CARGA DE SUCURSAL
-                    //if (validarCargaArticulo())
-                    //    return;
                     negocio.agregar(sucursal); //Agregar el Articulo a la Base de datos
                     sucursal.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
-                    MessageBox.Show("Articulo agregado exitosamente");
+                    MessageBox.Show("Sucursal agregada exitosamente");
 
                 }
 

@@ -53,8 +53,6 @@ namespace Grupo_7A
                     txtNombre.Text = articulo.Nombre;
                     cbxCategoria.SelectedValue = articulo.Categoria.Id;
                     cbxMarca.SelectedValue = articulo.Marca.Id;
-                    //txtImagen.Text = articulo.Imagen;
-                    //cargarImagen(txtImagen.Text);
                     txtPrecio.Text = articulo.Precio.ToString();
 
                 }
@@ -66,22 +64,6 @@ namespace Grupo_7A
                 MessageBox.Show(ex.ToString());
             }
         }
-
-        //private void cargarImagen(string imagen)
-        //{
-        //    try
-        //    {
-
-        //        pbxAgregarArticulo.Load(imagen);
-
-        //    }
-        //    catch (Exception)
-        //    {
-        //        pbxAgregarArticulo.Load("https://img.freepik.com/vector-gratis/ups-error-404-ilustracion-concepto-robot-roto_114360-5529.jpg?semt=ais_hybrid&w=740");
-        //    }
-
-        //}
-
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {
 
@@ -91,11 +73,6 @@ namespace Grupo_7A
         {
             this.Close();
         }
-
-        //private void txtImagen_Leave(object sender, EventArgs e)
-        //{
-        //    cargarImagen(txtImagen.Text);
-        //}
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
@@ -112,14 +89,12 @@ namespace Grupo_7A
                 articulo.Nombre = txtNombre.Text;
                 articulo.Marca = (Marca)cbxMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cbxCategoria.SelectedItem;
-                //articulo.Imagen = txtImagen.Text;
                 articulo.Precio = decimal.Parse(txtPrecio.Text);
 
                 if (articulo.Id != 0)
                 {
                     negocio.modificar(articulo);
                     articulo.Id = negocio.ultimoAgregado(); //Busca el ultimo articulo (Que es el que se agrego recien)
-                    //negocio.modificarImagen(articulo);
                     MessageBox.Show("Articulo modificado exitosamente");
                 }
                 else

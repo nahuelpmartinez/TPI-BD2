@@ -30,35 +30,12 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.gbxBusquedaRapida = new System.Windows.Forms.GroupBox();
-            this.txtBusquedaRapida = new System.Windows.Forms.TextBox();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminarFisico = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvSucursales = new System.Windows.Forms.DataGridView();
-            this.gbxBusquedaRapida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSucursales)).BeginInit();
             this.SuspendLayout();
-            // 
-            // gbxBusquedaRapida
-            // 
-            this.gbxBusquedaRapida.Controls.Add(this.txtBusquedaRapida);
-            this.gbxBusquedaRapida.Location = new System.Drawing.Point(28, 545);
-            this.gbxBusquedaRapida.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gbxBusquedaRapida.Name = "gbxBusquedaRapida";
-            this.gbxBusquedaRapida.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gbxBusquedaRapida.Size = new System.Drawing.Size(418, 119);
-            this.gbxBusquedaRapida.TabIndex = 18;
-            this.gbxBusquedaRapida.TabStop = false;
-            this.gbxBusquedaRapida.Text = "Busqueda Rapida";
-            // 
-            // txtBusquedaRapida
-            // 
-            this.txtBusquedaRapida.Location = new System.Drawing.Point(34, 52);
-            this.txtBusquedaRapida.Margin = new System.Windows.Forms.Padding(6);
-            this.txtBusquedaRapida.Name = "txtBusquedaRapida";
-            this.txtBusquedaRapida.Size = new System.Drawing.Size(348, 31);
-            this.txtBusquedaRapida.TabIndex = 0;
             // 
             // btnModificar
             // 
@@ -124,8 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 691);
-            this.Controls.Add(this.gbxBusquedaRapida);
+            this.ClientSize = new System.Drawing.Size(1102, 620);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminarFisico);
             this.Controls.Add(this.btnAgregar);
@@ -134,17 +110,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Sucursales";
             this.Load += new System.EventHandler(this.frmSucursales_Load);
-            this.gbxBusquedaRapida.ResumeLayout(false);
-            this.gbxBusquedaRapida.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSucursales)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox gbxBusquedaRapida;
-        private System.Windows.Forms.TextBox txtBusquedaRapida;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminarFisico;
         private System.Windows.Forms.Button btnAgregar;

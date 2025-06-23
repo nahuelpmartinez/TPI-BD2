@@ -49,6 +49,7 @@ namespace Grupo_7A
                     dgvMarcaCategoria.DataSource = listaMarca;
                     dgvMarcaCategoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dgvMarcaCategoria.Columns["Id"].Visible = false;
+                    dgvMarcaCategoria.Columns["Estado"].Visible = false;
 
                 }
                 else //CATEGORIA
@@ -58,6 +59,9 @@ namespace Grupo_7A
                     dgvMarcaCategoria.DataSource = listaCategoria;
                     dgvMarcaCategoria.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                     dgvMarcaCategoria.Columns["Id"].Visible = false;
+                    dgvMarcaCategoria.Columns["Estado"].Visible = false;
+
+
                 }
 
             }
