@@ -21,9 +21,13 @@ namespace negocio
         public AccesoDatos()
         {
             //conexion = new SqlConnection("server=.\\SQLEXPRESS; database=GestionStockDB; integrated security=true");
+            //Casa
             conexion = new SqlConnection("server=192.168.100.66; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
+            
             //conexion = new SqlConnection("server=192.168.1.10; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
 
+            //Celu
+            //conexion = new SqlConnection("server=192.168.211.202; database=CafeteriaStockDB; User ID=sa; Password=VeryStr0ngP@ssw0rd;");
 
             comando = new SqlCommand();
         }
